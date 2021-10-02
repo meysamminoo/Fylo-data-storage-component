@@ -122,6 +122,7 @@ body {
   border-radius: 10px;
   margin-left: 3px;
   position: relative;
+  animation: fill-range 2s ease-in-out;
 }
 .fill-range::after {
   content: "";
@@ -242,5 +243,15 @@ body {
   .attribution {
     margin-top: 50px;
     font-weight: 400;
+  }
+}
+
+/* Animation fill progressbar */
+@keyframes fill-range {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
   }
 }
